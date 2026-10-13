@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b12">
+  <meta name="description" content="AFK Gaming Hub — gaming downloads, creator resources, and community extras.">
+  <title>AFK Gaming Hub | Aalsi Funny Khiladi</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">AFK</span><span>GAMING HUB</span></a>
+    <nav><a href="#downloads">Downloads</a><a href="#premium">Premium</a><a href="#about">About</a></nav>
+    <a class="button button-small" href="https://www.youtube.com/@AalsiFunnyKhiladi" target="_blank" rel="noopener">Subscribe on YouTube ↗</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow"><span class="pulse"></span> AALSI FUNNY KHILADI COMMUNITY</div>
+      <h1>LEVEL UP YOUR<br><span>GAMING EXPERIENCE.</span></h1>
+      <p>Gaming resources, creator tools, and community downloads — all in one AFK zone.</p>
+      <div class="hero-actions">
+        <a class="button" href="#downloads">Explore Downloads <span>↓</span></a>
+        <a class="button button-ghost" href="https://www.youtube.com/@AalsiFunnyKhiladi" target="_blank" rel="noopener">Visit YouTube ↗</a>
+      </div>
+      <div class="hero-foot"><span>BUILT FOR THE AFK SQUAD</span><span>PLAY • CREATE • REPEAT</span></div>
+    </section>
+
+    <section class="section" id="downloads">
+      <div class="section-head"><div><div class="eyebrow">THE RESOURCE VAULT</div><h2>Latest Downloads</h2></div><span class="muted">ACCESS CONTROL COMING ONLINE</span></div>
+      <div id="file-list" class="file-grid">
+        <article class="file-card"><div class="file-icon">PK</div><div class="file-meta"><span class="tag free">FREE</span><span class="muted">DEMO ITEM</span></div><h3>Pokémon Gaming Resources</h3><p>Sample card — replace it with your uploaded file catalogue.</p><button class="button button-full" data-demo="download">Check Access</button></article>
+        <article class="file-card"><div class="file-icon purple">FX</div><div class="file-meta"><span class="tag premium">PREMIUM</span><span class="muted">DEMO ITEM</span></div><h3>Creator Preset Pack</h3><p>Premium sample item. Payments and access are not enabled yet.</p><button class="button button-full button-ghost" data-demo="premium">View Premium</button></article>
+        <article class="file-card"><div class="file-icon blue">OBS</div><div class="file-meta"><span class="tag free">FREE</span><span class="muted">DEMO ITEM</span></div><h3>Streaming Setup Notes</h3><p>Example listing for OBS guides, overlays, or setup files.</p><button class="button button-full" data-demo="download">Check Access</button></article>
+      </div>
+      <p class="notice" id="status-note">Demo mode: protected downloads are not active until the server is configured.</p>
+    </section>
+
+    <section class="split-section" id="premium">
+      <div><div class="eyebrow">SUPPORT THE CHANNEL</div><h2>Go beyond<br><span>the free tier.</span></h2><p>Premium packs can be added later with verified payment and server-side access. No payment is collected by this starter site.</p><a class="button" href="https://www.youtube.com/@AalsiFunnyKhiladi" target="_blank" rel="noopener">Support A.F.K. ↗</a></div>
+      <div class="premium-panel"><div class="crown">✦</div><div class="tag premium">PREMIUM AREA</div><h3>AFK Creator Vault</h3><p>Exclusive resources, packs, and extras.</p><div class="line"></div><div class="muted">PAYMENTS NOT CONNECTED</div></div>
+    </section>
+
+    <section class="section admin-section" id="admin">
+      <div class="section-head"><div><div class="eyebrow">CREATOR TOOLS</div><h2>Admin Upload Panel</h2></div><span class="tag warning">DEMO ONLY</span></div>
+      <p class="muted">This form is a visual placeholder. It does not upload files yet. Never use a frontend-only password for admin security.</p>
+      <form id="upload-form" class="upload-form">
+        <label>File title<input type="text" name="title" placeholder="e.g. AFK overlay pack" required></label>
+        <label>Access level<select name="access"><option value="subscriber">YouTube subscribers</option><option value="premium">Premium purchase</option><option value="public">Public</option></select></label>
+        <label>Choose file<input type="file" name="file" required></label>
+        <button class="button" type="submit">Preview Upload <span>↑</span></button>
+      </form>
+      <p id="upload-note" class="notice">Uploads are disabled in demo mode.</p>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="eyebrow">ABOUT A.F.K.</div><h2>Welcome to the squad.</h2>
+      <p>AFK Gaming Hub is the companion site for <strong>Aalsi Funny Khiladi</strong>. Check back for gaming downloads and creator resources.</p>
+      <a href="https://www.youtube.com/@AalsiFunnyKhiladi" target="_blank" rel="noopener" class="text-link">youtube.com/@AalsiFunnyKhiladi ↗</a>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#"><span class="brand-mark">AFK</span><span>GAMING HUB</span></a><span>© <span id="year"></span> A.F.K. Gaming. All rights reserved.</span><span class="muted">PLAY • CREATE • REPEAT</span></footer>
+  <script src="./app.js"></script>
+</body>
+</html>

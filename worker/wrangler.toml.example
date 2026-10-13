@@ -1,0 +1,20 @@
+name = "afk-gaming-hub-api"
+main = "src/index.js"
+compatibility_date = "2026-10-13"
+
+# Copy this file to wrangler.toml and replace the placeholder IDs.
+# Never commit wrangler.toml if you add secrets or private configuration.
+
+[[d1_databases]]
+binding = "DB"
+database_name = "afk-gaming-hub-db"
+database_id = "REPLACE_WITH_D1_DATABASE_ID"
+
+[[r2_buckets]]
+binding = "FILES"
+bucket_name = "afk-gaming-hub-private-files"
+
+[vars]
+# Set PUBLIC_SITE_ORIGIN to the exact deployed Pages origin before enabling CORS.
+PUBLIC_SITE_ORIGIN = "https://REPLACE_WITH_YOUR_SITE.pages.dev"
+YOUTUBE_CHANNEL_ID = "REPLACE_WITH_CANONICAL_CHANNEL_ID"
